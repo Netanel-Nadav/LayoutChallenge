@@ -1,0 +1,13 @@
+.team {
+    height: 700px;
+    h1 {
+        font-size: rem(48px);
+        max-width: 30ch;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 80px;
+        span {
+            color: $clr4;
+        }
+    }
+}

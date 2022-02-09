@@ -1,0 +1,31 @@
+nav {
+  height: 65px;
+  margin-top: 70px;
+  .logo-container {
+    font-family: livvicBold, sans-serif;
+    font-size: rem(40px);
+  }
+
+  .container {
+    gap: 50px;
+  }
+
+  ul {
+    gap: 20px;
+  }
+
+  button {
+    border: none;
+    background: none;
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: $clr5;
+    border: 2px solid $clr5;
+    cursor: pointer;
+    font-family: livvicBold;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

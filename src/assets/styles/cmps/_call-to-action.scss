@@ -1,0 +1,28 @@
+.call-to-action {
+  background-color: $clr2;
+  height: 200px;
+  position: relative;
+
+  h1 {
+    font-family: livvicBold, sans-serif;
+    font-size: rem(48px);
+    color: $clr3;
+  }
+
+  button {
+    background: none;
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: $clr3;
+    border: 2px solid $clr3;
+    cursor: pointer;
+    font-family: livvicBold;
+  }
+
+  .pattern4 {
+      position: absolute;
+      width: 200px;
+      bottom: 0;
+      left: -170px;
+  }
+}

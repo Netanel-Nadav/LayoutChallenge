@@ -1,0 +1,44 @@
+.footer {
+    background-color: $clr3;
+    height: 200px;
+    align-items: center;
+    .container{
+        height: 80%;
+        .wrraper{
+            gap: 100px;
+
+            .logo-and-nav {
+                gap: 30px;
+                h1 {
+                    font-size: rem(48px);
+                    line-height: 1;
+                    margin-top: -10px;
+                }
+                .links-container {
+                    gap: 50px;
+                }
+            }
+
+            .adress {
+                line-height: 1.5;
+                color: rgba($color: #ffffff, $alpha: 0.4);
+            }
+        }
+        .social {
+            height: 100%;
+
+            p {
+                color: rgba($color: #ffffff, $alpha: 0.4);
+            }
+            .icons-container {
+                gap: 20px;
+                justify-content: flex-end;
+                img {
+                    width: 25px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}

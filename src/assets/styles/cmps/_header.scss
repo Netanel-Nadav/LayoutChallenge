@@ -1,0 +1,50 @@
+.header {
+    position: relative;
+    height: 700px;
+    .side-circle {
+        position: absolute;
+        width: 200px;
+        left: -55%
+    }
+    .header-info{
+        gap: 120px;
+        h1{
+            font-family: livvicBold;
+            font-size: rem(100px);
+            max-width: 10ch;
+
+            span{
+                color: $clr2;
+            }
+        }
+
+        .subtext-container{
+            gap: 60px;
+            .line{
+                width: 50px;
+                height: 5px;
+                background-color: $clr4;
+            }
+
+            p {
+                max-width: 38ch;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .pattern1 {
+        width: 200px;
+        position: absolute;
+        left: -270px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .pattern2 {
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+    }
+}

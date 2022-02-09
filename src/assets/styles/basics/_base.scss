@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: livvic, sans-serif;
+    line-height: 1;
+    color: $clr5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $clr1;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}

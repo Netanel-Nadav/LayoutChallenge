@@ -1,0 +1,36 @@
+.benefits {
+  background-color: $clr3;
+  height: 700px;
+  position: relative;
+
+  .container {
+      width: 100%;
+    .line-title-container {
+        margin-top: -60px;
+        flex-basis: 50%;
+      gap: 50px;
+      .line {
+        width: 40px;
+        height: 5px;
+        background-color: $clr2;
+      }
+      h1 {
+        font-size: rem(48px);
+        max-width: 15ch;
+        line-height: 48px;
+      }
+    }
+    .list-container {
+      .benefits-list {
+        gap: 50px;
+      }
+    }
+  }
+
+  .pattern3 {
+    width: 200px;
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+  }
+}
