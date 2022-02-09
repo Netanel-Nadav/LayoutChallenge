@@ -1,50 +1,74 @@
 .header {
-    position: relative;
+  position: relative;
+  height: 550px;
+  .side-circle {
+    position: absolute;
+    width: 200px;
+    left: -55%;
+  }
+  .header-info {
+    flex-direction: column;
+    .title-wrraper {
+      h1 {
+        font-family: livvicBold;
+        font-size: rem(38px);
+        max-width: 10ch;
+        text-align: center;
+        margin-bottom: 1.2rem;
+
+        span {
+          color: $clr2;
+        }
+      }
+    }
+    .subtext-container {
+        p {
+            text-align: center;
+
+        }
+    }
+  }
+
+  .pattern1 {
+    width: 200px;
+    position: absolute;
+    left: -270px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pattern2 {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+  }
+
+  @include for-narrow-layout {
     height: 700px;
-    .side-circle {
-        position: absolute;
-        width: 200px;
-        left: -55%
-    }
-    .header-info{
-        gap: 120px;
-        h1{
-            font-family: livvicBold;
-            font-size: rem(100px);
-            max-width: 10ch;
-
-            span{
-                color: $clr2;
-            }
+    .header-info {
+      flex-direction: row;
+      gap: 120px;
+      .title-wrraper {
+        h1 {
+          font-size: rem(100px);
+          text-align: left;
+        }
+      }
+      .subtext-container {
+        gap: 60px;
+        .line {
+          width: 50px;
+          height: 5px;
+          background-color: $clr4;
         }
 
-        .subtext-container{
-            gap: 60px;
-            .line{
-                width: 50px;
-                height: 5px;
-                background-color: $clr4;
-            }
-
-            p {
-                max-width: 38ch;
-                line-height: 1.5;
-            }
+        p {
+          max-width: 38ch;
+          line-height: 1.5;
+          text-align: left;
         }
+      }
     }
-
-    .pattern1 {
-        width: 200px;
-        position: absolute;
-        left: -270px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .pattern2 {
-        width: 300px;
-        position: absolute;
-        bottom: 0;
-        right: 10%;
-    }
+  }
 }

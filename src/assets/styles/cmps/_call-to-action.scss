@@ -1,12 +1,18 @@
 .call-to-action {
   background-color: $clr2;
-  height: 200px;
+  height: 350px;
   position: relative;
 
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
   h1 {
     font-family: livvicBold, sans-serif;
-    font-size: rem(48px);
+    font-size: rem(32px);
     color: $clr3;
+    text-align: center;
   }
 
   button {
@@ -17,6 +23,11 @@
     border: 2px solid $clr3;
     cursor: pointer;
     font-family: livvicBold;
+
+    &:hover {
+      background-color: $clr3;
+      color: $clr2;
+    }
   }
 
   .pattern4 {
@@ -24,5 +35,17 @@
       width: 200px;
       bottom: 0;
       left: -170px;
+  }
+
+  @include for-normal-layout {
+    height: 200px;
+    h1 {
+      font-size: rem(48px);
+
+    }
+    .container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 }

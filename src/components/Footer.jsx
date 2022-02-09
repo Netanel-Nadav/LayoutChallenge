@@ -8,9 +8,9 @@ import tw from '../assets/img/icon-twitter.svg'
 
 export function Footer() {
     return (
-        <section className='footer main-container full'>
+        <footer className='footer main-container full'>
             <div className='container flex space-between align-center'>
-                <div className='wrraper flex'>
+                {/* <div className='wrraper flex'> */}
                     <div className='logo-and-nav flex column'>
                         <h1>myteam</h1>
                         <div className='links-container flex'>
@@ -25,7 +25,7 @@ export function Footer() {
                         <p>California 92714</p>
                         <p>Call Us : 949-833-7432</p>
                     </div>
-                </div>
+                {/* </div> */}
                 <div className='social flex column space-around'>
                     <div className='icons-container flex'>
                         <img src={fb} className='fb-icon' />
@@ -35,6 +35,6 @@ export function Footer() {
                     <p>Copyright 2020. All Rights Reserved</p>
                 </div>
             </div>
-        </section>
+        </footer>
     )
 }

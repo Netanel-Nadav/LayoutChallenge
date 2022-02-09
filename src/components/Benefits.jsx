@@ -35,7 +35,7 @@ export function Benefits() {
 
     return (
         <section className='benefits full flex align-center main-container'>
-            <div className='container flex'>
+            <div className='wrraper flex justify-center'>
                 <div className='line-title-container flex column'>
                     <div className='line'></div>
                     <h1><em>Build & manage distributed teams like no one else.</em></h1>

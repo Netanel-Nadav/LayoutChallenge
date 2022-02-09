@@ -2,12 +2,13 @@
 
     .container {
         gap: 20px;
+        flex-direction: column;
         .img-container {
             width: 75px;
         }
         .info {
             gap: 10px;
-
+            align-items: center;
             h1 {
                 font-family: livvicBold, sans-serif;
                 font-size: rem(18px);
@@ -17,7 +18,22 @@
             p {
                 font-size: rem(15px);
                 line-height: 25px;
-                max-width: 40ch;
+                max-width: 47ch;
+                text-align: center;
+            }
+        }
+    }
+
+    @include for-normal-layout {
+        .container {
+            flex-direction: row;
+            .info {
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                p{
+                    text-align: left;
+                }
             }
         }
     }

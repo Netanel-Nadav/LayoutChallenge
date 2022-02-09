@@ -1,13 +1,52 @@
 .team {
-    height: 700px;
+  height: 1450px;
+  display: flex;
+  position: relative;
+  
+  .pattern5 {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .pattern6 {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+
+  .wrraper {
+    width: 100%;
     h1 {
-        font-size: rem(48px);
-        max-width: 30ch;
-        text-align: center;
-        margin: auto;
-        margin-bottom: 80px;
-        span {
-            color: $clr4;
-        }
+      display: none;
+      font-size: rem(30px);
+      max-width: 30ch;
+      text-align: center;
+      margin-bottom: 80px;
+      span {
+        color: $clr4;
+      }
     }
+
+    .team-list {
+      flex-direction: column;
+      gap: 50px;
+
+      @include for-wide-layout {
+        flex-direction: row;
+      }
+    }
+    @include for-wide-layout {
+      h1 {
+        display: block;
+        font-size: rem(48px);
+      }
+    }
+  }
+
+  @include for-wide-layout {
+    height: 750px;
+  }
 }

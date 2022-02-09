@@ -1,6 +1,6 @@
 .member-preview {
     margin-bottom: 1.5rem;
-    gap: 30px;
+    gap: 40px;
     position: relative;
     .qoutes-img{
         position: absolute;
@@ -10,14 +10,13 @@
     }
     p{
         text-align: center;
-        line-height: 1.5;
-        max-width: 35ch;
+        line-height: 25px;
+        max-width: 36ch;
         z-index: 1;
     }
 
     .info-container {
-        gap: 5px;
-        margin-bottom: 1.2rem;
+        gap: 15px;
         h2 {
             font-size: rem(18px);
             font-family: livvicBold, sans-serif;
@@ -29,7 +28,7 @@
     width: 70px;
     img {
         border-radius: 50%;
-        border: 2px solid $clr5;
+        border: 3px solid $clr5;
     }
   }
 }

@@ -1,16 +1,15 @@
 .footer {
     background-color: $clr3;
-    height: 200px;
+    height: 430px;
     align-items: center;
     .container{
         height: 80%;
-        .wrraper{
-            gap: 100px;
-
+        flex-direction: column;
+    
             .logo-and-nav {
-                gap: 30px;
+                gap: 20px;
                 h1 {
-                    font-size: rem(48px);
+                    font-size: rem(38px);
                     line-height: 1;
                     margin-top: -10px;
                 }
@@ -22,17 +21,16 @@
             .adress {
                 line-height: 1.5;
                 color: rgba($color: #ffffff, $alpha: 0.4);
+                text-align: center;
             }
-        }
+        
         .social {
-            height: 100%;
-
             p {
                 color: rgba($color: #ffffff, $alpha: 0.4);
             }
             .icons-container {
                 gap: 20px;
-                justify-content: flex-end;
+                justify-content: center;
                 img {
                     width: 25px;
                     cursor: pointer;
@@ -41,4 +39,29 @@
         }
     }
 
+    @include for-normal-layout {
+        height: 200px;
+        .container {
+            flex-direction: row;
+            
+                flex-direction: row;
+                gap: 100px;
+                .logo-and-nav {
+                    h1{
+                        font-size: rem(38px);
+                    }
+                }
+            
+                .adress {
+                    text-align: left;
+                }
+
+            .social{
+                gap: 40px;
+                .icons-container{
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
 }

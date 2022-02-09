@@ -10,4 +10,21 @@
             grid-column: 1 / -1;
         }
     }
+
+    @include for-mobile-layout{
+
+    }
+
+
+    @include for-mobile-layout {
+        grid-template-columns: 20px 1fr 20px;
+    }
+
+    @include for-narrow-layout {
+
+    }
+
+    @include for-wide-layout {
+
+    }
 }

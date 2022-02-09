@@ -7,9 +7,10 @@ import routes from './routes'
 export function RootCmp() {
   return (
     <section className="App main-container">
-      <Routes>
-        {routes.map(route => <Route key={route.path} exact={true} element={route.component} path={route.path} />)}
-      </Routes>
+  <Navigation/>
+        <Routes>
+          {routes.map(route => <Route key={route.path} exact={true} element={route.component} path={route.path} />)}
+        </Routes>
     </section>
   );
 }

@@ -1,23 +1,24 @@
 .benefits {
   background-color: $clr3;
-  height: 700px;
   position: relative;
+  padding-bottom: 120px;
+  padding-top: 85px;
 
-  .container {
-      width: 100%;
+  .wrraper {
+    flex-direction: column;
+    width: 100%;
+    gap: 120px;
     .line-title-container {
-        margin-top: -60px;
-        flex-basis: 50%;
-      gap: 50px;
+      gap: 20px;
       .line {
-        width: 40px;
-        height: 5px;
+        width: 50px;
+        height: 4px;
         background-color: $clr2;
       }
       h1 {
-        font-size: rem(48px);
-        max-width: 15ch;
-        line-height: 48px;
+        font-size: rem(32px);
+        max-width: 10ch;
+        
       }
     }
     .list-container {
@@ -28,9 +29,35 @@
   }
 
   .pattern3 {
-    width: 200px;
+    width: 150px;
     position: absolute;
-    right: -100px;
-    bottom: 0;
+    right: -50px;
+    top: 0;
+  }
+
+  @include for-normal-layout {
+    height: 700px;
+    padding-bottom: 0;
+    .wrraper{
+      margin-top: 0;
+      flex-direction: row;
+
+      .line-title-container {
+        margin-top: -60px;
+        gap: 60px;
+        h1{
+          font-size: rem(48px);
+          max-width: 15ch;
+          line-height: 48px;
+        }
+      }
+    }
+
+    .pattern3 {
+      width: 200px;
+      position: absolute;
+      right: -100px;
+      bottom: 0;
+    }
   }
 }

@@ -1,31 +1,65 @@
 nav {
   height: 65px;
-  margin-top: 70px;
+  margin-top: 50px;
   .logo-container {
     font-family: livvicBold, sans-serif;
     font-size: rem(40px);
   }
 
+  .wrraper {
+    gap: 120px;
+  }
   .container {
     gap: 50px;
   }
 
   ul {
-    gap: 20px;
+    display: none;
+    li {
+      display: none;
+    }
   }
 
   button {
-    border: none;
-    background: none;
-    padding: 10px 40px;
-    border-radius: 50px;
-    color: $clr5;
-    border: 2px solid $clr5;
-    cursor: pointer;
-    font-family: livvicBold;
+    display: none;
   }
 
   .hidden {
-    display: none;
+    display: block;
+    border: none;
+    background: none;
+    color: $clr5;
+    font-size: rem(18px);
+  }
+
+  @include for-normal-layout {
+    margin-top: 70px;
+    ul {
+      display: flex;
+      gap: 20px;
+      li {
+        display: block;
+      }
+    }
+
+    button {
+      display: block;
+      border: none;
+      background: none;
+      padding: 10px 40px;
+      border-radius: 50px;
+      color: $clr5;
+      border: 2px solid $clr5;
+      cursor: pointer;
+      font-family: livvicBold;
+  
+      &:hover {
+        background-color: $clr5;
+        color: black;
+      }
+    }
+    .hidden {
+      display: none;
+    }
   }
 }
