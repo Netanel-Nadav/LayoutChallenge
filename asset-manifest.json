@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/LayoutChallenge/static/css/main.bde06f6a.css",
-    "main.js": "/LayoutChallenge/static/js/main.3aa856a4.js",
+    "main.js": "/LayoutChallenge/static/js/main.04c3e36c.js",
     "static/js/377.c1855308.chunk.js": "/LayoutChallenge/static/js/377.c1855308.chunk.js",
     "static/media/Livvic-Light.ttf": "/LayoutChallenge/static/media/Livvic-Light.00ab7fdbfbb47fc8e788.ttf",
     "static/media/Livvic-Bold.ttf": "/LayoutChallenge/static/media/Livvic-Bold.089af19ac41ce144a96c.ttf",
@@ -25,11 +25,11 @@
     "static/media/icon-facebook.svg": "/LayoutChallenge/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
     "static/media/pattern5.svg": "/LayoutChallenge/static/media/pattern5.aacd4e03b04df33749baa362f4612832.svg",
     "main.bde06f6a.css.map": "/LayoutChallenge/static/css/main.bde06f6a.css.map",
-    "main.3aa856a4.js.map": "/LayoutChallenge/static/js/main.3aa856a4.js.map",
+    "main.04c3e36c.js.map": "/LayoutChallenge/static/js/main.04c3e36c.js.map",
     "377.c1855308.chunk.js.map": "/LayoutChallenge/static/js/377.c1855308.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bde06f6a.css",
-    "static/js/main.3aa856a4.js"
+    "static/js/main.04c3e36c.js"
   ]
 }
