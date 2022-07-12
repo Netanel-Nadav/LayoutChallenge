@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://Netanel-Nadav.github.io/LayoutChallenge",
+  "homepage": "https://Netanel-Nadav.github.io/LayoutChallenge",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^11.2.7",
